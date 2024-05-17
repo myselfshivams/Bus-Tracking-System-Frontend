@@ -1,54 +1,35 @@
-html {
-  height:100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 
+@font-face {
+    font-family: 'HeroFont';
+    src: url('./assets/HeroFont.woff') format('woff'); 
+  }
+
+html{
+  scroll-behavior: smooth;
+}
 body {
-  margin:0;
+  background-color: #fee440;
 }
-
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
 }
-
-.bg3 {
-  animation-duration:5s;
+::-webkit-scrollbar-track {
+  background: #f1f1f1a9;
+  backdrop-filter: blur(10px);
 }
-
-.content {
-  background-color:rgba(255,255,255,.8);
-  border-radius:.25em;
-  box-shadow:0 0 .25em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
+::-webkit-scrollbar-thumb {
+  background: blueviolet;
+  border-radius: 5px;
 }
-
-h1 {
-  font-family:monospace;
-}
-
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(137, 43, 226, 0.715);
 }

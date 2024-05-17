@@ -9,6 +9,7 @@ const NavBar = () => {
   };
 
   return (
+    <div id="main-nav-content">
     <nav className="navbar">
       <div className="navbar-container">
         <img src="./src/assets/psit.png" alt="logo" />
@@ -19,11 +20,14 @@ const NavBar = () => {
           <a href="#contact" className="navbar-link">Contact</a>
           <a href="#team" className="navbar-link">Team</a>
         </div>
-        <button className="navbar-toggle" onClick={toggleNavbar}>
-          <span className="navbar-toggle-icon"></span>
-        </button>
+        <div id='btn-content'>
+          <button className="navbar-toggle" onClick={toggleNavbar}>
+            <span className="navbar-toggle-icon"></span>
+          </button>
+        </div>
       </div>
     </nav>
+    </div>
   );
 };
 
