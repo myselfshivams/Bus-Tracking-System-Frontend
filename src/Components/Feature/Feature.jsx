@@ -1,8 +1,29 @@
+import { useState, useEffect } from 'react';
 import './Feature.css';
 
 const Feature = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const featureContent = document.getElementById('feature-content');
+      const featurePosition = featureContent.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (featurePosition < screenHeight * 0.75) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div id='feature-content'>
+    <div id='feature-content' className={isVisible ? 'visible' : ''}>
       <div className="header">
         <h1>Powered by Technology</h1>
       </div>

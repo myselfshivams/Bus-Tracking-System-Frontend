@@ -1,0 +1,14 @@
+.home-container {
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url('../assets/home-background.svg')!important;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

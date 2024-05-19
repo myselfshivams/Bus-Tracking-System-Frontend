@@ -28,11 +28,12 @@
     box-shadow: 0 0 10px grey;
     overflow: hidden;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
   
   .card:hover {
-    transform: translateY(-30px);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px grey;
   }
   
   .card-image {
@@ -58,7 +59,7 @@
   
   .card-subheading {
     font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1rem;
     color: #2a2a2a;
     margin-bottom: 15px;

@@ -1,0 +1,60 @@
+.aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .mainheading {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .aboutsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .cardheading {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .abouttext {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .aboutsection {
+      flex-direction: row;
+    }
+  
+    .abouttext {
+      width: 50%;
+      margin: 0 20px;
+    }
+  
+    .about-image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

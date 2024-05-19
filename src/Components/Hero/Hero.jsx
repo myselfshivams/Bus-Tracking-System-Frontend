@@ -3,7 +3,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="hero-content">
+      <div className="hero-content fade-in-slide-up">
         <h1 className="main-heading">Welcome to PSIT Bus Tracing System</h1>
         <h2 className="sub-heading">Track Your Ride in Real-Time</h2>
         <p className="hero-text">

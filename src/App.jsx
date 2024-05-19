@@ -1,20 +1,23 @@
 import './App.css'
 import Home from './Landing/Home'
-// import NavBar from '../Components/Navbar/NavBar.jsx'
-// import Hero from '../Components/Hero/Hero.jsx'
-// import Cards from '../Components/Cards/Cards.jsx'
-// import Footer from '../Components/Footer/Footer.jsx'
-// import Feature from '../Components/Feature/Feature.jsx'
+import About from './Landing/About'
+import Service from './Landing/Service'
+import Contact from './Landing/Contact'
+import Team from './Landing/Team'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
 
   return (
     <>
-    {/* <NavBar />
-     <Hero />
-     <Cards />
-     <Feature />
-     <Footer /> */}
-     <Home />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/services' element={<Service />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/teams' element={<Team />} />
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }

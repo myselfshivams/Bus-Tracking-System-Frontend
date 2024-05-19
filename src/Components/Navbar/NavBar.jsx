@@ -14,11 +14,11 @@ const NavBar = () => {
       <div className="navbar-container">
         <img src="./src/assets/psit.png" alt="logo" />
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          <a href="#home" className="navbar-link">Home</a>
-          <a href="#about" className="navbar-link">About</a>
-          <a href="#services" className="navbar-link">Services</a>
-          <a href="#contact" className="navbar-link">Contact</a>
-          <a href="#team" className="navbar-link">Team</a>
+          <a href="/" className="navbar-link">Home</a>
+          <a href="/about" className="navbar-link">About</a>
+          <a href="/services" className="navbar-link">Services</a>
+          <a href="/contact" className="navbar-link">Contact</a>
+          <a href="/teams" className="navbar-link">Team</a>
         </div>
         <div id='btn-content'>
           <button className="navbar-toggle" onClick={toggleNavbar}>
