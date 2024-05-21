@@ -12,7 +12,7 @@ const NavBar = () => {
     <div id="main-nav-content">
     <nav className="navbar">
       <div className="navbar-container">
-        <img src="./src/assets/psit.png" alt="logo" />
+        <img src="./public/assets/psit.png" alt="logo" />
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <a href="/" className="navbar-link">Home</a>
           <a href="/about" className="navbar-link">About</a>

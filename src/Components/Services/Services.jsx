@@ -27,7 +27,7 @@ const Services = () => {
       <h1 className="main-heading-service animate"><u>Our Services</u></h1>
       <div className="service-content-container">
         <img
-          src="/src/assets/geofencing.png"
+          src="/public/assets/service-1.png"
           alt="Hero"
           className="hero-image animate"
         />
@@ -47,7 +47,7 @@ const Services = () => {
           </p>
         </div>
         <img
-          src="/src/assets/geofencing.png"
+          src="/public/assets/service-2.png"
           alt="Hero"
           className="hero-image animate"
         />
