@@ -27,7 +27,7 @@ const AboutContent = () => {
       <h1 className="main-heading-about animate"><u>About Us</u></h1>
       <div className="about-content-container">
         <img
-          src="/public/assets/about-img.svg"
+          src="/assets/about-img.svg"
           alt="Hero"
           className="hero-image animate"
         />
@@ -60,7 +60,7 @@ const AboutContent = () => {
           </p>
         </div>
         <img
-          src="/public/assets/about3.png"
+          src="/assets/about3.png"
           alt="Hero"
           className="hero-image animate"
         />
@@ -68,7 +68,7 @@ const AboutContent = () => {
 
       <div className="about-content-container">
         <img
-          src="/public/assets/about2.png"
+          src="/assets/about2.png"
           alt="Hero"
           className="hero-image animate"
         />
