@@ -23,9 +23,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 768px) {
+    .about-content-container {
+      margin: 20px 0px;
+    }
+    .main-heading-about{
+      margin: 20px;
+    }
+  }
+
   .hero-image {
     background: none;
-    /* max-width: 90%; */
     width: 260px;
     flex: 1;
     opacity: 0;

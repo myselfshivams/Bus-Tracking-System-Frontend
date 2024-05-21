@@ -123,6 +123,9 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .contact-main-heading{
+    margin: 20px;
+  }
   .info-section {
     flex-direction: column;
     align-items: center;

@@ -109,6 +109,12 @@
   }
   
   @media (max-width: 768px) {
+    .team-container{
+      margin: 0px;
+    }
+    .team-title{
+      margin: 20px;
+    }
     .team-title {
       font-size: 2rem;
     }
@@ -129,6 +135,7 @@
   
   @media (max-width: 480px) {
     .team-card {
+      margin: 0px;
       max-width: 100%;
       padding: 15px;
     }
