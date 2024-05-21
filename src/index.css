@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'HeroFont';
-    src: url('./assets/HeroFont.woff') format('woff'); 
+    src: url('/assets/HeroFont.woff') format('woff'); 
   }
 body{
   margin: 0;
   padding: 0;
   background-attachment: fixed;
-  background-image: url('../public/assets/home-background.svg')!important;
+  background-image: url('/assets/home-background.svg')!important;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
