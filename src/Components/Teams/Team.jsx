@@ -2,8 +2,8 @@ import "./Team.css";
 
 const teamMembers = [
   {
-    name: "   Shivam",
-    role: "Cloud & Back-End Dev",
+    name: "Shivam",
+    role: "Cloud & Back-End Developer",
     imageUrl: "/src/assets/teams/shivam.png",
   },
   {
@@ -12,13 +12,13 @@ const teamMembers = [
     imageUrl: "/src/assets/teams/sans.png",
   },
   {
-    name: "  Ritik Gupta",
-    role: "Front-End Dev",
+    name: "Ritik Gupta",
+    role: "Front-End Developer",
     imageUrl: "/src/assets/teams/ritik.png",
   },
   {
     name: "Saksham Gupta",
-    role: "Android Dev",
+    role: "Android Developer",
     imageUrl: "/src/assets/teams/saksham.png",
   },
   {
@@ -30,26 +30,25 @@ const teamMembers = [
 
 function Team() {
   return (
-  <>
     <div className="team-container">
-      <h1 className="team-title">Our Team:-</h1>
+      <h1 className="team-title animate"><u>Our Team</u></h1>
       <div className="team-members">
         {teamMembers.map((member, index) => (
-          <div className="team-card" key={index}>
+          <div className="team-card animate" key={index}>
             <div className="circle-image">
               <img
                 src={member.imageUrl}
                 alt={member.name}
-                className="profile-pic"
+                className="profile-pic animate"
               />
             </div>
-            <h3 className="member-name">{member.name}</h3>
-            <p className="member-role">({member.role})</p>
+            <h3 className="member-name animate">{member.name}</h3>
+            <p className="member-role animate">{member.role}</p>
+            <button className="animate">Connect</button>
           </div>
         ))}
       </div>
     </div>
-    </>
   );
 }
 

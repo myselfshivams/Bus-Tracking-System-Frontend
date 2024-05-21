@@ -13,7 +13,7 @@ footer {
     outline: none;
   }
   .row {
-    padding: 1em 1em;
+    padding: 10px;
   }
   .row.primary {
     display: grid;
@@ -24,7 +24,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 2em;
+    padding: 10px;
   }
   h3 {
     font-family: 'HeroFont',sans-serif;
@@ -76,11 +76,12 @@ footer {
     padding: 10px;
     width: 50%;
     border-radius: 10px;
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1rem !important;
+    color: #fff !important;
     font-weight: 500;
     background-color: blueviolet;
   }
+  
   @media screen and (max-width: 850px) {
     .row.primary {
       grid-template-columns: 1fr;

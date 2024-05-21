@@ -3,7 +3,6 @@ import Hero from '../Components/Hero/Hero.jsx'
 import Cards from '../Components/Cards/Cards.jsx'
 import Footer from '../Components/Footer/Footer.jsx'
 import Feature from '../Components/Feature/Feature.jsx'
-import './Home.css';
 function Home() {
 
   return (

@@ -1,18 +1,40 @@
-import "./AboutContent.css";
-import busImage from "/src/assets/teams/about/bus.png"; 
-import tuneInImage from "/src/assets/teams/about/bus.png";
+import { useEffect } from 'react';
+import './AboutContent.css';
 
 const AboutContent = () => {
-  return (
-    <>
-    <div className="aboutcontainer">
-      <h1 className="mainheading">ABOUT</h1>
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.animate');
+      elements.forEach((element) => {
+        const position = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (position < windowHeight - 100) {
+          element.classList.add('in-view');
+        }
+      });
+    };
 
-      <div className="aboutsection">
-        <div className="abouttext">
-          <h2 className="cardheading">Introduction</h2>
-          <p>
-            In many educational institutions, managing transportation services
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="Aboutcontainer">
+      <h1 className="main-heading-about animate"><u>About Us</u></h1>
+      <div className="about-content-container">
+        <img
+          src="/src/assets/about-img.svg"
+          alt="Hero"
+          className="hero-image animate"
+        />
+        <div className="about-text-container animate">
+          <h2 className="about-sub-heading">Introduction</h2>
+          <p className="about-content">
+          In many educational institutions, managing transportation services
             efficiently poses a significant challenge. The lack of real-time
             tracking and effective management tools often leads to operational
             inefficiencies, safety concerns, and inconvenience for both students
@@ -22,19 +44,13 @@ const AboutContent = () => {
             institutions.
           </p>
         </div>
-        <div className="about-image">
-          <img src={busImage} alt="Bus Tracking" />
-        </div>
       </div>
 
-      <div className="aboutsection">
-        <div className="about-image">
-          <img src={tuneInImage} alt="Tune In" />
-        </div>
-        <div className="abouttext">
-          <h2 className="cardheading">Objectives</h2>
-          <p>
-            Enhance Operational Efficiency: Improve the management of bus
+      <div className="about-content-container">
+        <div className="about-text-container animate">
+          <h2 className="about-sub-heading">Objectives</h2>
+          <p className="about-content">
+          Enhance Operational Efficiency: Improve the management of bus
             schedules and routes to ensure timely arrivals and departures.
             Ensure Student Safety: Provide real-time tracking to enhance the
             safety of students using the transportation services. Improve
@@ -43,41 +59,35 @@ const AboutContent = () => {
             changes.
           </p>
         </div>
+        <img
+          src="/src/assets/about3.png"
+          alt="Hero"
+          className="hero-image animate"
+        />
       </div>
 
-      <div className="aboutsection">
-        <div className="abouttext">
-          <h2 className="cardheading">Features</h2>
-          <p>
-            Real-Time Tracking: Track the exact location of buses in real-time.
-            Data Analytics: Generate reports and insights for better decision
-            making. Notifications and Alerts: Send timely notifications to users
-            about bus schedules, delays, and changes. Secure Access: Ensure
-            secure access to the system for all users.
-          </p>
-        </div>
-        <div className="about-image">
-          <img src={busImage} alt="Features" />
-        </div>
-      </div>
-
-      <div className="aboutsection">
-        <div className="about-image">
-          <img src={tuneInImage} alt="Tune In" />
-        </div>
-        <div className="abouttext">
-          <h2 className="cardheading">Conclusion</h2>
-          <p>
-            Our college bus tracking and management system aims to provide a
-            seamless, efficient, and safe transportation experience for students
-            and staff. By integrating advanced tracking and management features,
-            we strive to address the current challenges and improve the overall
-            efficiency of transportation services in educational institutions.
+      <div className="about-content-container">
+        <img
+          src="/src/assets/about2.png"
+          alt="Hero"
+          className="hero-image animate"
+        />
+        <div className="about-text-container animate">
+          <h2 className="about-sub-heading">Introduction</h2>
+          <p className="about-content">
+          In many educational institutions, managing transportation services
+            efficiently poses a significant challenge. The lack of real-time
+            tracking and effective management tools often leads to operational
+            inefficiencies, safety concerns, and inconvenience for both students
+            and administrative staff. To address these challenges, our
+            comprehensive college bus tracking and management system is designed
+            to streamline transportation services within educational
+            institutions.
           </p>
         </div>
       </div>
+
     </div>
-    </>
   );
 };
 

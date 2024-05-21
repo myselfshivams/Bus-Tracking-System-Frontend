@@ -27,8 +27,8 @@ h1{
 .box p {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    color: rgb(32, 31, 31);
-    font-weight: 550;
+    color: rgb(51, 51, 51);
+    font-weight: 525;
 }
 .box h2{
     letter-spacing: 1px;
@@ -99,7 +99,7 @@ img {
 }
 .visible {
     opacity: 0;
-    animation: fadeIn 3s ease forwards;
+    animation: fadeIn 1s ease forwards;
     animation-delay: .5s;
   }
   
