@@ -39,7 +39,7 @@ const ContactUs = () => {
           <p>Office Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
         </div>
         <img
-          src="./public/assets/contact-us-img.png"
+          src="/assets/contact-us-img.png"
           alt="Office"
           className="info-image animate"
           width={300}

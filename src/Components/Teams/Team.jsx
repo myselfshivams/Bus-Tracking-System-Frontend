@@ -4,27 +4,27 @@ const teamMembers = [
   {
     name: "Shivam",
     role: "Cloud & Back-End Developer",
-    imageUrl: "/public/assets/teams/shivam.png",
+    imageUrl: "/assets/teams/shivam.png",
   },
   {
     name: "Sanskar Soni",
     role: "UI/UX Designer",
-    imageUrl: "/public/assets/teams/sans.png",
+    imageUrl: "/assets/teams/sans.png",
   },
   {
     name: "Ritik Gupta",
     role: "Front-End Developer",
-    imageUrl: "/public/assets/teams/ritik.png",
+    imageUrl: "/assets/teams/ritik.png",
   },
   {
     name: "Saksham Gupta",
     role: "Android Developer",
-    imageUrl: "/public/assets/teams/saksham.png",
+    imageUrl: "/assets/teams/saksham.png",
   },
   {
     name: "Divyanshi Sengar",
     role: "Content Writer",
-    imageUrl: "/public/assets/teams/divyanshi.png",
+    imageUrl: "/assets/teams/divyanshi.png",
   },
 ];
 
