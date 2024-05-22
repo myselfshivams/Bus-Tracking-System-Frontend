@@ -21,11 +21,9 @@ const NavBar = () => {
             <Link to="/contact" className="navbar-link">Contact</Link>
             <Link to="/teams" className="navbar-link">Team</Link>
           </div>
-          <div id='btn-content'>
-            <button className="navbar-toggle" onClick={toggleNavbar}>
-              <span className="navbar-toggle-icon"></span>
-            </button>
-          </div>
+          <button className="navbar-toggle" onClick={toggleNavbar}>
+            <span className="navbar-toggle-icon"></span>
+          </button>
         </div>
       </nav>
     </div>
