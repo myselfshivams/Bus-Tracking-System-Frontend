@@ -125,6 +125,13 @@
     font-weight: 600;
     margin-bottom: 30px;
   }
+  .popup-inner p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: popins, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
  .submit-form label {
   line-height: 1.6;
     font-family: 'popins', sans-serif;
@@ -133,24 +140,37 @@
     margin-bottom: 14px;
   }
   .submit-form input {
+    font-size: 1.1rem;
+    font-family: popins, sans-serif;
     width: 95%;
-    padding: 10px;
+    padding: 7px;
     border: none;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     border-radius: 6px;
     background-color: rgb(232, 232, 232);
-    box-shadow: 0 0 4px grey;
+    outline: none;
+  }
+  .submit-form select{
+    font-size: 1rem;
+    font-family: popins, sans-serif;
+    color: rgba(68, 68, 68, 0.741);
+    width: 98%;
+    padding: 7px;
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background-color: rgb(232, 232, 232);
+    outline: none;
   }
 
   .popup-inner form button {
-    width: 120px;
+    width: auto;
     background-color:blueviolet;
     color: #fff;
     border: none;
     font-family: 'popins',sans-serif;
     font-size: 1rem;
-    letter-spacing: 1px;
-    padding: 10px;
+    padding: 10px 30px;
     font-weight: 525;
     cursor: pointer;
     border-radius: 10px;
@@ -164,7 +184,6 @@
 .close-button {
     font-family:'popins', sans-serif;
     font-weight: 525;
-    letter-spacing: 1px;
     font-size: 1rem;
     background-color: #0056b3;
     color: white;

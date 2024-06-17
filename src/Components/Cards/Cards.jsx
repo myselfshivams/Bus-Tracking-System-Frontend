@@ -6,6 +6,9 @@ const Cards = () => {
   const [showAdminLogin, setShowAdminLogin] = useState(false);
   const [showDriverLogin, setShowDriverLogin] = useState(false);
   const [showStudentLogin, setShowStudentLogin] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+  const [showOtpModal, setShowOtpModal] = useState(false);
+
   const navigate = useNavigate();
 
   const handleAdminLoginClick = () => {
@@ -24,6 +27,8 @@ const Cards = () => {
     setShowAdminLogin(false);
     setShowDriverLogin(false);
     setShowStudentLogin(false);
+    setShowSignUp(false);
+    setShowOtpModal(false);
   };
 
   const handleLoginSubmit = (event, userType) => {
@@ -35,6 +40,19 @@ const Cards = () => {
     } else if (userType === 'student') {
       navigate('/student');
     }
+  };
+
+  const handleSignUpSubmit = (e) => {
+    e.preventDefault();
+    // handle sign-up logic here
+    setShowSignUp(false);
+    setShowOtpModal(true);
+  };
+
+  const handleOtpSubmit = (e) => {
+    e.preventDefault();
+    // handle OTP verification logic here
+    setShowOtpModal(false);
   };
 
   return (
@@ -112,15 +130,55 @@ const Cards = () => {
           <div className="popup-inner">
             <h2>Student Login</h2>
             <form className='submit-form' onSubmit={(e) => handleLoginSubmit(e, 'student')}>
-              <label>
-                Username:
-              </label>
+              <label>Username:</label>
               <input type="text" name="username" />
-              <label>
-                Password:
-              </label>
+              <label>Password:</label>
               <input type="password" name="password" />
               <button type="submit">Login</button>
+            </form>
+            <p>
+              Do not have Account ? <span className="sign-up-link" onClick={() => setShowSignUp(true)} style={{color:'blueviolet'}}><u>Sign up here</u></span>
+            </p>
+            <button className="close-button" onClick={handleCloseClick}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {showSignUp && (
+        <div className="popup">
+          <div className="popup-inner">
+            <h2>Sign Up</h2>
+            <form className='submit-form' onSubmit={handleSignUpSubmit}>
+              <label>Student Name</label>
+              <input type="text" name="username" />
+              <label>Student ID</label>
+              <input type="number" name="userid" />
+              <label>Route</label>
+              <select name="route">
+              <option value="" disabled selected>Select an option</option>
+                <option value="route1">Naubasta</option>
+                <option value="route2">Vijay Nagar</option>
+                <option value="route3">Kalyanpur</option>
+              </select>
+              <label>Password:</label>
+              <input type="password" name="password" />
+              <label>Email:</label>
+              <input type="email" name="email" />
+              <button type="submit">Sign Up</button>
+            </form>
+            <button className="close-button" onClick={handleCloseClick}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {showOtpModal && (
+        <div className="popup">
+          <div className="popup-inner">
+            <h2>Enter OTP</h2>
+            <form className='submit-form' onSubmit={handleOtpSubmit}>
+              <label>OTP:</label>
+              <input type="passowrd" name="otp" />
+              <button type="submit">Submit</button>
             </form>
             <button className="close-button" onClick={handleCloseClick}>Close</button>
           </div>
